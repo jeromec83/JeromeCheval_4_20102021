@@ -28,7 +28,6 @@ a:hover {
 }
 
 .bloc {
-    width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
@@ -46,6 +45,7 @@ a:hover {
 
 .bloc-lg {
     padding: 100px 50px;
+    text-align: center;
 }
 
 .bloc-md {
@@ -71,7 +71,9 @@ a:hover {
     -o-background-size: auto!important;
     background-size: auto!important;
 }
-
+.tc-black{
+    color:#000000
+}
 .bg-repeat {
     background: repeat;
 }
@@ -326,6 +328,10 @@ a:hover {
     float: left;
     margin-top: 4px;
     font-size: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    list-style: none;
+    
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -361,7 +367,15 @@ a:hover {
     position: relative;
     z-index: 2;
 }
-
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+.form-group{
+    padding: 5px;
+}
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -651,11 +665,11 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1500px;
 }
 
 .hero-bloc-text {
@@ -677,7 +691,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px;
 }
 
 .tight-width-whitespace {
@@ -686,7 +700,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 30px;
     font-family: "Open Sans";
 }
 
@@ -705,12 +719,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 25px;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -734,6 +748,14 @@ h4 {
     margin-bottom: 14px;
     margin-top: 24px;
 }
+.trans{
+    background-color: #303030;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    color :white;
+}
+
 
 .white {
     color: #FFFFFF!important;
@@ -760,6 +782,7 @@ h4 {
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
+    font-size: 18px;
 }
 
 .bgc-white {
@@ -776,10 +799,11 @@ h4 {
 
 .tc-white {
     color: #F3976C!important;
+    text-shadow: 1px 1px 2px black;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #303030;
     color: #FFFFFF!important;
 }
 
@@ -841,6 +865,10 @@ blockquote p::before {
 blockquote p::after {
     content: '\201D';
 }
+figcaption{
+    font-size: 16px;
+    color: black;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -856,12 +884,21 @@ blockquote p::after {
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
+    header {
+        width: 98%;
+        max-width: 992px;
+        margin: auto;
+      }
     .navbar .nav {
-        max-width: 80%
+        max-width: 50%
     }
     .nav-center.navbar .nav {
-        max-width: 100%
+        max-width: 80%
     }
+    .navbar-nav li{
+        display: inline-flex;
+    }
+   
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
