@@ -718,6 +718,11 @@ p {
     margin: auto auto auto auto;
 }
 
+.social a{
+    color:white;
+    font-size: 18px;
+    ;
+}
 h2 {
     font-size: 25px;
     line-height: 1.4em;
